@@ -1,7 +1,7 @@
 class EventsController < ApplicationController
   
   def Index
-    @event= Event.all
+    @events= Event.all
   end
-  
+
 end
