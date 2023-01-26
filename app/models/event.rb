@@ -5,3 +5,7 @@ class Event < ApplicationRecord
 end
 
 
+# class AttendEvent 
+#     belongs_to :attendee, class_name: "User"
+#     belongs_to :event, class_name: "Post"
+# end
