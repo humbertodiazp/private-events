@@ -6,6 +6,6 @@ class User < ApplicationRecord
   
   has_many :events
   has_many :attendees, through: :attended_events 
-  has_many :hosts, class_name: "Post", foreign_key: :host_id, 
+  has_many :hosts, class_name: "Event", foreign_key: :host_id, 
 
 end
