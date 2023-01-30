@@ -1,5 +1,10 @@
-<h1>Events#index</h1>
-<p>Find me in app/views/events/index.html.erb</p>
+<h1>Events<h1/>
 
-
-x
+<tbody>
+<% @events.each do |event| %>
+    <tr>
+    <td><%= events.title %></td>
+    <td><%= events.date %></td>
+    </tr>
+<% end %>
+</tbody>
