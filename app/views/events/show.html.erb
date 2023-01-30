@@ -1,0 +1,7 @@
+<h1>All Events</h1>
+    <%= form_with model: @events do |event| %>
+        <%= events.label "tittle:"  %>  
+        <%= events.text_field :tittle  %> 
+        <%= events.label "date:"  %>  
+        <%= events.text_field :date  %> 
+     <% end %>
