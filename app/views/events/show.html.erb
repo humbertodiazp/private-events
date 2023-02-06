@@ -1,14 +1,12 @@
-    <%= form_with model: @event do |event| %>
-        <%= events.label "tittle:"  %>  
-        <%= events.text_field :tittle  %> 
-        <%= events.label "date:"  %>  
-        <%= events.text_field :date  %> 
-     <% end %>
+
 
      <tbody>
-    <% @events.attendees.each do |attendee| %>
+     <h1>Details of Events </h1>
+
+    <% @event each do |event| %>
         <tr>
-        <td><%= attendee.event_attendee_id %></td>
+        <td><%= event.title %></td>
+         <td><%= event.date %></td>
         </tr>
     <% end %>
     </tbody>
